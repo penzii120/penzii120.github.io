@@ -1,0 +1,69 @@
+.Image > img{
+    width: 200px;
+    height: 250px;
+}
+.Image{
+    position: relative;
+}
+.Book{
+    display:block;
+    width: 50px;
+}
+.image__overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color:#ffffff;
+    font-family: 'QuickSand', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.image__overlay > a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.image__overlay--blur{
+    backdrop-filter: blur(5px);
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__overlay:hover > *{
+    transform: translateY(0);
+} 
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+#input{
+    margin-left: -8px;
+}
+.maleSlike{
+    width: 125px;
+}
+#sadhguru{
+    width:145px;
+}
+#firstPhoto{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    width: 100vw;
+}
+.he{
+    font-weight: 600;
+}
