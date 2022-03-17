@@ -29,20 +29,25 @@
             </div>
         </div>
     </nav>
+    <header class="masthead">
 
-        <div class="container-fluid pt-5">
-            <img id = "firstPhoto" src="img/firstImage.jpg" alt="" class="img-fluid">
-        </div>
+    </header>
+
+    <!--
+        <img id = "firstPhoto" src="img/firstImage.jpg" alt="" class="img-fluid">
+    -->
         
     <section class=" text-light" style = "background-color: #E2D48C;">
         <div class="container">
-            <div class="d md-flex justify-content-between align-items-center">
+            <div class="d-flex">
                 <div class="input-group p-2 news-input">
-                    <input id = "input" type="text" class="form-control mt-1 me-4" placeholder="Recommend me a book">
-                    <div class="row">
-                        <button class="btn btn-outline-secondary" data-bs-toggle = "modal" data-bs-target = "#enroll"type="button">Submit</button>
+                    <div class="col-sm-11">
+                        <input id = "input" type="text" class="form-control mt-1" placeholder="Recommend me a book">
                     </div>
-                  </div>
+                    <div class="col-sm-1">
+                            <button id = "btn"class="btn btn-outline-secondary mt-1" data-bs-toggle = "modal" data-bs-target = "#enroll"type="button">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,11 +115,13 @@
     <section id = "" class="p-2" style = "background-color: #E2D48C;">
         <div class="container">
             <h3 class = "text-center p-2">My Book Recommendation</h3>
-            <div class="row align-items-center justify-content-between g-4">
+            <div class="row align-items-center justify-content-between g-4 ">
                 <div class="col-md Image">
                     <img src="img/sadhguru.jpg" class = "img-fluid mx-auto d-block Book" alt="">
-                    <div class="image__overlay image__overlay--blur">
-                        <a href="https://amzn.to/35W5xDN" class="image__title">Click To Buy</a>
+                    <div class="image__overlay image__overlay--blur ">
+                        <a href="https://amzn.to/35W5xDN" class="image__title">
+                            <span class = "">Click To Buy</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md Image">
@@ -166,30 +173,30 @@
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div class="accordion-body">Ovde ce stajati odgovor na pitanje broj1</div>
                   </div>
                 </div>
                 <!--Drugo pitanje-->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="questions-two">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
-                      Accordion Item #2
+                        Pitanje #2
                     </button>
                   </h2>
                   <!--Trece pitanje-->
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    <div class="accordion-body">Ovde ce ubuduce stajati odgovor na pitanje broj 2</div>
                   </div>
                 </div>
                 <!--Cetvrto pitanje-->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="questions-three">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
-                      Accordion Item #3
+                        Pitanje #3
                     </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body">Ovde ce ubuduce stajati odgovor na pitanje broj 3</div>
                   </div>
                 </div>
               </div>
@@ -202,7 +209,7 @@
                 Neke ljude koje vredi poslusati
             </h2>
             <div class="row g-4">
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
                             <img src="https://bit.ly/36gZKs6" class = "rounded-circle mb-3 maleSlike">
@@ -235,12 +242,11 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <!--<img src="https://bit.ly/3I4avve" class = "rounded-circle mb-4 maleSlike">-->
                             
-                            <img src="https://bit.ly/3KF5CKT" class = "rounded-circle mb-3 maleSlike">
+                            <img src="https://bit.ly/3CXsnXS" class = "rounded-circle mb-3 maleSlike">
                         <h3 class="card-title mb-3">Alan Watts</h3>
                         <p class="card-text">Pisac i filozof koji je preneo svoj jednostavan i prelep pogled na svet 
-                            zapadu a i ljudima sirom sveta. Najpoznatija knjiga mu je The Way Of Zen.
+                            zapadu a i ljudima sirom sveta. Play instead of Work.
                         </p>
                             <a href="#"><i class="bi bi-twitter text-dark"></i></a>
                             <a href="#"><i class="bi bi-instagram text-dark"></i></a>
@@ -251,10 +257,10 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://bit.ly/36kZrgd" class = "rounded-circle mb-4 maleSlike" id = "sadhguru">
-                        <h3 class="card-title mb-3">John Doe</h3>
+                            <img src="https://bit.ly/3CN1yFI" class = "rounded-circle mb-3 maleSlike">
+                        <h3 class="card-title mb-3">Sadhguru</h3>
                         <p class="card-text">Indijski guru koje samo slusanje njegovog
-                            glasa moze da umiri vase bice. Ima par knjiga napisanih i mozete dosta 
+                            glasa moze da umiri vase bice. Mozete dosta 
                             stvari nauciti i cuti od njega.
                         </p>
                             <a href="#"><i class="bi bi-twitter text-dark"></i></a>
@@ -266,8 +272,6 @@
             </div>
         </div>
     </section>
-
-
     <footer class="p-5 bg-dark text-white text-center position-relative" >
         <div class="container">
             <p class="lead">
@@ -279,7 +283,6 @@
         </div>
 
     </footer>
-
     <!-- Modal -->
     <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -296,7 +299,7 @@
                         <label for="comment" class = "col-form-label">Komentar</label>
                     </div>
                     <div class="mb-1">
-                        <input type="text" class="form-control input-lg" id="comment">
+                        <textarea id="message" cols="30" rows="10" class="form-control" placeholder="Komentar" style = "height: 117px;"></textarea>
                     </div>
                 </form>
             </p>
@@ -308,7 +311,6 @@
         </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
